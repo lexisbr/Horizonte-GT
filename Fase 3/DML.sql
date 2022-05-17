@@ -296,7 +296,7 @@ CREATE TABLE  "horizonte_gt"."gate" (
 DROP TABLE IF EXISTS "horizonte_gt"."airplane_type" CASCADE;
 
 CREATE TABLE  "horizonte_gt"."airplane_type" (
-  "id_airplane_type" INT NOT NULL ,
+  "id_airplane_type" SERIAL NOT NULL ,
   "name" VARCHAR(45) NOT NULL,
   PRIMARY KEY ("id_airplane_type"));
 
@@ -396,16 +396,16 @@ CREATE TABLE  "horizonte_gt"."class" (
 -- -----------------------------------------------------
 -- Table "horizonte_gt"."flght_plan_class"
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS "horizonte_gt"."flght_plan_class" CASCADE;
+DROP TABLE IF EXISTS "horizonte_gt"."flight_plan_class" CASCADE;
 
-CREATE TABLE  "horizonte_gt"."flght_plan_class" (
+CREATE TABLE  "horizonte_gt"."flight_plan_class" (
   "id_flight_plan" INT NOT NULL,
   "name_class" VARCHAR(30) NOT NULL,
   "adults_price" DECIMAL NOT NULL CHECK("adults_price">0),
   "child_price" DECIMAL NOT NULL CHECK("child_price">0),
   "pct_increase_child" DECIMAL NOT NULL CHECK("pct_increase_child">=0),
   "pct_increase_adults" DECIMAL NOT NULL CHECK("pct_increase_adults">=0),
-  "price_increase_limite" INT NOT NULL CHECK("price_increase_limite">=0),
+  "price_increase_limit" INT NOT NULL CHECK("price_increase_limit">=0),
   PRIMARY KEY ("id_flight_plan", "name_class"),
   CONSTRAINT "fk_flght_plan_class_flight_plan1"
     FOREIGN KEY ("id_flight_plan")
@@ -748,6 +748,7 @@ CREATE TABLE  "horizonte_gt"."vaccine_list" (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
+---- STOP
 
 -- -----------------------------------------------------
 -- Table "horizonte_gt"."pet_flight_price"
@@ -948,7 +949,7 @@ CREATE TABLE  "horizonte_gt"."food_ingredients" (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
+-- STOP
 -- -----------------------------------------------------
 -- Table "horizonte_gt"."wifi_price"
 -- -----------------------------------------------------
@@ -1156,7 +1157,7 @@ CREATE TABLE  "horizonte_gt"."flight_survey" (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-
+-- STOP
 -- -----------------------------------------------------
 -- Table "horizonte_gt"."position_aboard"
 -- -----------------------------------------------------
@@ -1324,7 +1325,7 @@ CREATE TABLE  "horizonte_gt"."payment_log" (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 	
-
+-- :D
 
 
 

@@ -597,3 +597,3284 @@ INSERT INTO horizonte_gt.courtesy(
     'Al abordar un avion tiene derecho a cargar 1 maleta documentada de 50 lbs'
 );
 
+-- --------------------------------------------
+-- INSERTS FOR ACCOUNT TYPE COURTESY
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.account_type_courtesy(
+    "account_type_name",
+    "name_courtesy"
+) VALUES (
+    'Oro',
+    '1 Pelicula'
+);
+
+INSERT INTO horizonte_gt.account_type_courtesy(
+    "account_type_name",
+    "name_courtesy"
+) VALUES (
+    'Platino',
+    '1 Maleta Documentada de 50 lbs'
+);
+
+INSERT INTO horizonte_gt.account_type_courtesy(
+    "account_type_name",
+    "name_courtesy"
+) VALUES (
+    'Platino',
+    '1 Pelicula'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PURCHASER
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones"
+) VALUES (
+    '123456789',
+    'Eduardo',
+    'Barrios',
+    'eduardo@gmail.com',
+    ARRAY ['123456','456789']
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones"
+) VALUES (
+    '1234567891',
+    'Adely',
+    'Guzman',
+    'adely@gmail.com',
+    ARRAY ['78945678','78956532']
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones"
+) VALUES (
+    '1234567892',
+    'Jose',
+    'Molina',
+    'josem@gmail.com',
+    ARRAY ['112345678','78456595']
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones"
+) VALUES (
+    '1234567893',
+    'Janet',
+    'Rodas',
+    'janet@gmail.com',
+    ARRAY ['45786595','32654157']
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones"
+) VALUES (
+    '1234567894',
+    'Roberto',
+    'Gutierrez',
+    'robertog@gmail.com',
+    ARRAY ['45487598']
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones",
+    "user_username"
+) VALUES (
+    '123456',
+    'Alejandro',
+    'Barrios',
+    'alejandro@gmail.com',
+    ARRAY ['12345678','87456123'],
+    'alejandroBR'
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones",
+    "user_username"
+) VALUES (
+    '456789',
+    'Jose',
+    'Rodas',
+    'jose@mail.com',
+    ARRAY ['12345678','87456123'],
+    'joseABR'
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones",
+    "user_username"
+) VALUES (
+    '4567891323',
+    'Pablo',
+    'Barrios',
+    'pablo@gmail.com',
+    ARRAY ['45678912','57446123'],
+    'pabloBR'
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones",
+    "user_username"
+) VALUES (
+    '456789123789',
+    'Sharon',
+    'Zarate',
+    'sharon@gmail.com',
+    ARRAY ['12345678','87456123'],
+    'sharonZG'
+);
+
+INSERT INTO horizonte_gt.purchaser(
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "phones",
+    "user_username"
+) VALUES (
+    '65498731',
+    'Kiddie',
+    'Gang',
+    'kiddie@gmail.com',
+    ARRAY ['78965478','78978978','12345678'],
+    'kiddieGang'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PAYMENT METHOD
+-- --------------------------------------------
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "user_username",
+    "purchaser_identification_number"
+) VALUES (
+    '123456789',
+    'Jose Barrios',
+    'Visa',
+    'Credito',
+    true,
+    '2022-12-12',
+    'alejandroBR',
+    '123456'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567891',
+    'Eduardo Barrios',
+    'Visa',
+    'Debito',
+    true,
+    '2025-10-08',
+    '123456789'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567892',
+    'Adely Guzman',
+    'MasterCard',
+    'Debito',
+    true,
+    '2026-12-12',
+    '1234567891'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567893',
+    'Jose Molina',
+    'Visa',
+    'Debito',
+    true,
+    '2027-12-12',
+    '1234567892'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567894',
+    'Janet Rodas',
+    'Visa',
+    'Credito',
+    true,
+    '2024-12-12',
+    '1234567893'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "user_username",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567895',
+    'Roberto Gutierrez',
+    'AmEx',
+    'Credito',
+    true,
+    '2025-09-12',
+    'alejandroBR',
+    '1234567894'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "user_username",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567896',
+    'Jose Rodas',
+    'Visa',
+    'Credito',
+    true,
+    '2022-12-12',
+    'joseABR',
+    '456789'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "user_username",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567897',
+    'Pablo Barrios',
+    'MasterCard',
+    'Credito',
+    true,
+    '2022-12-12',
+    'pabloBR',
+    '4567891323'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "user_username",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567898',
+    'Sharon Zarate',
+    'Visa',
+    'Credito',
+    true,
+    '2022-12-12',
+    'sharonZG',
+    '456789123789'
+);
+
+INSERT INTO horizonte_gt.payment_method (
+    "card_number",
+    "owner_name",
+    "brand",
+    "card_type",
+    "is_default",
+    "due_date",
+    "user_username",
+    "purchaser_identification_number"
+) VALUES (
+    '1234567899',
+    'Kiddie Gang',
+    'Visa',
+    'Debito',
+    true,
+    '2027-12-12',
+    'kiddieGang',
+    '65498731'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PASSENGER
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date",
+    "user_username"
+) VALUES (
+    '123456789',
+    '123456789',
+    'Alejandro',
+    'Barrios',
+    'alejandro@gmail.com',
+    'M',
+    '2000-05-02',
+    'alejandroBR'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date",
+    "user_username"
+) VALUES (
+    '1234567891',
+    '1234567891',
+    'Jose',
+    'Rodas',
+    'jose@gmail.com',
+    'M',
+    '2000-08-02',
+    'joseABR'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date",
+    "user_username"
+) VALUES (
+    '1234567892',
+    '1234567892',
+    'Pablo',
+    'Barrios',
+    'pablo@gmail.com',
+    'M',
+    '2001-03-27',
+    'pabloBR'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date",
+    "user_username"
+) VALUES (
+    '1234567893',
+    '1234567893',
+    'Sharon',
+    'Zarate',
+    'sharon@gmail.com',
+    'F',
+    '2000-10-06',
+    'sharonZG'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date",
+    "user_username"
+) VALUES (
+    '1234567894',
+    '1234567894',
+    'Kiddie',
+    'Gang',
+    'kiddie@gmail.com',
+    'F',
+    '2001-08-11',
+    'kiddieGang'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date"
+) VALUES (
+    '1234567895',
+    '1234567895',
+    'Eduardo',
+    'Barrios',
+    'eduardo@gmail.com',
+    'M',
+    '1970-08-11'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date"
+) VALUES (
+    '1234567896',
+    '1234567896',
+    'Adely',
+    'Guzman',
+    'adely@gmail.com',
+    'F',
+    '1970-12-11'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date"
+) VALUES (
+    '1234567897',
+    '1234567897',
+    'Jose',
+    'Molina',
+    'josem@gmail.com',
+    'M',
+    '2000-10-15'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date"
+) VALUES (
+    '1234567898',
+    '1234567898',
+    'Janet',
+    'Rodas',
+    'janet@gmail.com',
+    'F',
+    '1966-10-15'
+);
+
+INSERT INTO horizonte_gt.passenger (
+    "passport_number",
+    "identification_number",
+    "firstname",
+    "lastname",
+    "email",
+    "gender",
+    "birth_date"
+) VALUES (
+    '1234567899',
+    '1234567899',
+    'Roberto',
+    'Gutierrez',
+    'robertog@gmail.com',
+    'M',
+    '2000-08-15'
+);
+
+-- -----------------------------------------------------
+-- INSERTS FOR COUNTRY
+-- -----------------------------------------------------
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Francia',
+    'FR'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Alemania',
+    'DE'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Grecia',
+    'GR'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Guatemala',
+    'GT'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Holanda',
+    'NL'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Nueva Zelanda',
+    'NZ'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Portugal',
+    'PT'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Jamaica',
+    'JM'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'España',
+    'ES'
+);
+
+INSERT INTO horizonte_gt.country (
+    "name_country",
+    "abbreviation"
+) VALUES (
+    'Estados Unidos',
+    'US'
+);
+-- -----------------------------------------------------
+-- INSERTS FOR CITY
+-- -----------------------------------------------------
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Paris',
+    'Francia'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Munich',
+    'Alemania'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Atenas',
+    'Grecia'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Ciudad de Guatemala',
+    'Guatemala'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Amsterdam',
+    'Holanda'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Wellington',
+    'Nueva Zelanda'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Lisboa',
+    'Portugal'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Kingston',
+    'Jamaica'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Madrid',
+    'España'
+);
+
+INSERT INTO horizonte_gt.city (
+    "name_city",
+    "name_country"
+) VALUES (
+    'Los Angeles',
+    'Estados Unidos'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR AIRPORT
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Frances',
+    '1'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Aleman',
+    '2'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Griego',
+    '3'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Guatemalteco',
+    '4'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Holandes',
+    '5'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Neozelandes',
+    '6'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Portugues',
+    '7'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Jamaiquino',
+    '8'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Español',
+    '9'
+);
+
+INSERT INTO horizonte_gt.airport (
+    "name_airport",
+    "id_city"
+) VALUES (
+    'Aeropuerto Gringo',
+    '10'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR GATE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '1',
+    'A-1',
+    '1'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '2',
+    'B-1',
+    '2'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '3',
+    'C-1',
+    '3'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '4',
+    'D-1',
+    '4'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '5',
+    'E-1',
+    '5'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '6',
+    'F-1',
+    '6'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '7',
+    'G-1',
+    '7'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '8',
+    'H-1',
+    '8'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '9',
+    'I-1',
+    '9'
+);
+
+INSERT INTO horizonte_gt.gate (
+    "id_gate",
+    "name_gate",
+    "airport_id_airport"
+) VALUES (
+    '10',
+    'J-1',
+    '10'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR AIRPLANE TYPE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 1');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 2');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 3');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 4');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 5');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 6');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 7');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 8');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 9');
+
+INSERT INTO horizonte_gt.airplane_type ("name") 
+VALUES ('Tipo 10');
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT PLAN
+-- --------------------------------------------
+
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    200,
+    false,
+    '06:00',
+    '12:00',
+    '05:30',
+    ARRAY ['LUNES','MARTES','MIERCOLES'],
+    1,
+    2,
+    1
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    400,
+    false,
+    '06:00',
+    '17:00',
+    '05:30',
+    ARRAY ['LUNES','MIERCOLES'],
+    2,
+    3,
+    2
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    100,
+    false,
+    '16:00',
+    '17:00',
+    '15:30',
+    ARRAY ['MARTES','JUEVES'],
+    3,
+    4,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    300,
+    false,
+    '16:00',
+    '13:00',
+    '12:30',
+    ARRAY ['MIERCOLES','JUEVES'],
+    4,
+    5,
+    4
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    400,
+    false,
+    '16:00',
+    '20:00',
+    '15:30',
+    ARRAY ['MARTES','VIERNES'],
+    5,
+    6,
+    5
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    800,
+    false,
+    '20:00',
+    '05:00',
+    '19:30',
+    ARRAY ['VIERNES','SABADO'],
+    6,
+    7,
+    6
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    450,
+    true,
+    '12:00',
+    '17:00',
+    '11:30',
+    ARRAY ['SABADO','DOMINGO'],
+    7,
+    8,
+    7
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    150,
+    true,
+    '15:00',
+    '16:00',
+    '14:30',
+    ARRAY ['LUNES','JUEVES'],
+    8,
+    9,
+    8
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    100,
+    true,
+    '18:00',
+    '19:00',
+    '17:30',
+    ARRAY ['VIERNES','SABADO'],
+    9,
+    10,
+    9
+);
+
+INSERT INTO horizonte_gt.flight_plan(
+    "distance_miles",
+    "is_temporal",
+    "takeoff_time",
+    "arrival_time",
+    "boarding_time",
+    "available_days",
+    "id_gate_takeoff",
+    "id_gate_arrival",
+    "id_plane_type"
+) VALUES (
+    100,
+    false,
+    '18:00',
+    '19:00',
+    '17:30',
+    ARRAY ['LUNES','MARTES'],
+    10,
+    1,
+    10
+);
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT PLAN TEMPORARY
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.flight_plan_temporary(
+    "start_date",
+    "end_date",
+    "status",
+    "id_flight_plan"
+) VALUES (
+    '20-12-2022',
+    '01-01-2023',
+    true,
+    9
+);
+
+INSERT INTO horizonte_gt.flight_plan_temporary(
+    "start_date",
+    "end_date",
+    "status",
+    "id_flight_plan"
+) VALUES (
+    '01-12-2022',
+    '20-12-2023',
+    false,
+    10
+);
+
+INSERT INTO horizonte_gt.flight_plan_temporary(
+    "start_date",
+    "end_date",
+    "status",
+    "id_flight_plan"
+) VALUES (
+    '05-05-2022',
+    '15-01-2023',
+    true,
+    11
+);
+
+-- --------------------------------------------
+-- INSERTS FOR AIRPLANE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'ACTIVO',
+    '15-05-2000',
+    '30-05-2000',
+    '20-09-2022',
+    300,
+    15,
+    1
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'MANTENIMIENTO',
+    '30-10-2010',
+    '05-11-2010',
+    '30-09-2022',
+    400,
+    20,
+    2
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'ACTIVO',
+    '01-05-2020',
+    '05-05-2020',
+    '30-01-2022',
+    250,
+    15,
+    3
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'MANTENIMIENTO',
+    '01-08-2015',
+    '15-08-2015',
+    '15-02-2022',
+    300,
+    10,
+    4
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'ACTIVO',
+    '08-02-2012',
+    '15-02-2012',
+    '05-08-2021',
+    400,
+    20,
+    5
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'ACTIVO',
+    '15-09-2018',
+    '25-09-2018',
+    '08-12-2021',
+    600,
+    25,
+    6
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'ACTIVO',
+    '07-04-2018',
+    '20-04-2018',
+    '30-11-2020',
+    400,
+    20,
+    7
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'MANTENIMIENTO',
+    '01-09-2008',
+    '11-09-2008',
+    '18-04-2022',
+    900,
+    30,
+    9
+);
+
+INSERT INTO horizonte_gt.airplane (
+    "status",
+    "purchase_date",
+    "first_flight_date",
+    "last_maintenance_date",
+    "available_seats",
+    "available_seats_employees",
+    "id_airplane_type"
+) VALUES (
+    'ACTIVO',
+    '07-08-2010',
+    '08-10-2010',
+    '30-10-2021',
+    150,
+    10,
+    10
+);
+
+-- -----------------------------------------------------
+-- INSERTS FOR CLASS
+-- -----------------------------------------------------
+
+INSERT INTO horizonte_gt.class (
+    "name_class",
+    "abbreviation",
+    "hand_bags_number",
+    "checked_bags_number",
+    "location",
+    "exchange_fees",
+    "accept_refunds",
+    "allows_insurance",
+    "seat_is_assigned"
+) VALUES (
+    'PRIMERA CLASE',
+    'PC',
+    1,
+    2,
+    'PRIMERAS FILAS',
+    0,
+    true,
+    true,
+    false
+);
+
+INSERT INTO horizonte_gt.class (
+    "name_class",
+    "abbreviation",
+    "hand_bags_number",
+    "checked_bags_number",
+    "location",
+    "exchange_fees",
+    "accept_refunds",
+    "allows_insurance",
+    "seat_is_assigned"
+) VALUES (
+    'CLASE BUSINESS',
+    'CB',
+    1,
+    1,
+    'FILAS DESPUES DE PC',
+    0,
+    true,
+    true,
+    false
+);
+
+INSERT INTO horizonte_gt.class (
+    "name_class",
+    "abbreviation",
+    "hand_bags_number",
+    "checked_bags_number",
+    "location",
+    "exchange_fees",
+    "accept_refunds",
+    "allows_insurance",
+    "seat_is_assigned"
+) VALUES (
+    'CLASE ECONOMY',
+    'CE',
+    1,
+    0,
+    'ULTIMAS FILAS',
+    0,
+    false,
+    true,
+    false
+);
+
+INSERT INTO horizonte_gt.class (
+    "name_class",
+    "abbreviation",
+    "hand_bags_number",
+    "checked_bags_number",
+    "location",
+    "exchange_fees",
+    "accept_refunds",
+    "allows_insurance",
+    "seat_is_assigned"
+) VALUES (
+    'CLASE ECONOMY BASICA',
+    'EB',
+    0,
+    0,
+    'ULTIMAS FILAS',
+    0,
+    false,
+    false,
+    true
+);
+
+-- -----------------------------------------------------
+-- INSERTS FOR FLIGHT PLAN CLASS
+-- -----------------------------------------------------
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    3,
+    'PRIMERA CLASE',
+    250.00,
+    200,
+    10,
+    15,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    4,
+    'PRIMERA CLASE',
+    350.00,
+    300,
+    15,
+    15,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    5,
+    'CLASE BUSINESS',
+    150.00,
+    100,
+    05,
+    10,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    5,
+    'CLASE ECONOMY',
+    100.00,
+    800,
+    10,
+    15,
+    5
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    6,
+    'CLASE ECONOMY',
+    200,
+    150,
+    10,
+    15,
+    5
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    6,
+    'PRIMERA CLASE',
+    400.00,
+    300,
+    5,
+    10,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    7,
+    'CLASE ECONOMY',
+    100.00,
+    70,
+    10,
+    15,
+    5
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    8,
+    'PRIMERA CLASE',
+    400.00,
+    300,
+    10,
+    10,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    8,
+    'CLASE BUSINESS',
+    250.00,
+    200,
+    10,
+    15,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    9,
+    'CLASE ECONOMY',
+    200.00,
+    150,
+    09,
+    09,
+    5
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    10,
+    'PRIMERA CLASE',
+    550.00,
+    400,
+    10,
+    15,
+    3
+);
+
+INSERT INTO horizonte_gt.flight_plan_class (
+    "id_flight_plan",
+    "name_class",
+    "adults_price",
+    "child_price",
+    "pct_increase_child",
+    "pct_increase_adults",
+    "price_increase_limit"
+) VALUES (
+    11,
+    'PRIMERA CLASE',
+    700.00,
+    600,
+    10,
+    15,
+    3
+);
+
+-- --------------------------------------------
+-- INSERTS FOR SEAT
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    2,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    2,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    3,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    3,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    4,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    4,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    5,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    5,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    6,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    6,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    7,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    7,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '1',
+    'A',
+    8,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '2',
+    'A',
+    8,
+    'PRIMERA CLASE'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR DISTRIBUTION CLASS AIRPLANE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '1',
+    'PRIMERA CLASE',
+    '3',
+    '10'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '1',
+    'CLASE BUSINESS',
+    '3',
+    '5'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '2',
+    'PRIMERA CLASE',
+    '3',
+    '10'
+);
+
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '2',
+    'CLASE BUSINESS',
+    '3',
+    '5'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '3',
+    'PRIMERA CLASE',
+    '3',
+    '10'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '3',
+    'CLASE BUSINESS',
+    '3',
+    '5'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '4',
+    'PRIMERA CLASE',
+    '3',
+    '10'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '4',
+    'CLASE BUSINESS',
+    '3',
+    '5'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '5',
+    'PRIMERA CLASE',
+    '3',
+    '10'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '5',
+    'CLASE BUSINESS',
+    '3',
+    '5'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '6',
+    'PRIMERA CLASE',
+    '3',
+    '10'
+);
+
+INSERT INTO horizonte_gt.distribution_class_airplane(
+    "id_airplane",
+    "name_class",
+    "assigned_rows",
+    "seats_per_row"
+) VALUES (
+    '6',
+    'CLASE BUSINESS',
+    '3',
+);
+
+-- --------------------------------------------
+-- INSERTS FOR DISTRIBUTION FLIGHT STATUS
+-- --------------------------------------------
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'ABORDANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'DESPEGANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'ASCENDIENDO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'VOLANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'DESCENDIENDO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'ATERRIZANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'ATERRIZADO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'INACTIVO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'INACTIVO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight_status (
+    "name_flight_status"
+) VALUES (
+    'FINALIZADO'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT 
+-- --------------------------------------------
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    '06:00:00',
+    3,
+    1,
+    1,
+    2,
+    'VOLANDO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-16',
+    '17:00:00',
+    '06:00:00',
+    4,
+    3,
+    3,
+    4,
+    'FINALIZADO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-15',
+    '17:00:00',
+    '16:00:00',
+    5,
+    5,
+    3,
+    5,
+    'FINALIZADO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    '13:00:00',
+    6,
+    6,
+    2,
+    3,
+    'ABORDANDO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    '16:00:00',
+    7,
+    9,
+    5,
+    6,
+    'ABORDANDO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    '22:00:00',
+    8,
+    1,
+    2,
+    3,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    null,
+    9,
+    8,
+    8,
+    9,
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-18',
+    null,
+    null,
+    10,
+    8,
+    8,
+    9,
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    '17:00:00',
+    10,
+    3,
+    5,
+    6,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight(
+    "flight_date",
+    "arrival_time",
+    "takeoff_time",
+    "id_flight_plan",
+    "id_airplane",
+    "id_gate_arrival",
+    "id_gate_takeoff",
+    "name_flight_status"
+) VALUES (
+    '2022-05-17',
+    null,
+    '19:00:00',
+    11,
+    8,
+    7,
+    10,
+    'RETRASADO'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT STATUS LOGGER
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '06:00',
+    '17-05-2022',
+    25,
+    'DESPEGANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '06:10',
+    '17-05-2022',
+    25,
+    'VOLANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '07:00',
+    '17-05-2022',
+    26,
+    'DESPEGANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '07:10',
+    '17-05-2022',
+    26,
+    'VOLANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '16:30',
+    '18-05-2022',
+    26,
+    'DESCENDIENDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '16:50',
+    '18-05-2022',
+    26,
+    'ATERRIZANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '17:00',
+    '18-05-2022',
+    26,
+    'FINALIZADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '07:00',
+    '17-05-2022',
+    27,
+    'DESPEGANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '07:10',
+    '17-05-2022',
+    27,
+    'VOLANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '16:30',
+    '18-05-2022',
+    27,
+    'DESCENDIENDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '16:50',
+    '18-05-2022',
+    27,
+    'ATERRIZANDO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '17:00',
+    '18-05-2022',
+    27,
+    'FINALIZADO'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PURCHASE 
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    700.00,
+    '17-05-2022',
+    1,
+    'ACTIVO',
+    '123456',
+    '123456789'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    900.00,
+    '16-05-2022',
+    2,
+    'ACTIVO',
+    '123456789',
+    '1234567891'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    1000.00,
+    '17-05-2022',
+    2,
+    'ACTIVO',
+    '1234567891',
+    '1234567892'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    1500.00,
+    '10-05-2022',
+    3,
+    'ACTIVO',
+    '1234567892',
+    '1234567893'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    700.00,
+    '15-05-2022',
+    1,
+    'ACTIVO',
+    '1234567894',
+    '1234567895'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    1800.00,
+    '10-04-2022',
+    2,
+    'ACTIVO',
+    '456789',
+    '1234567896'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    700.00,
+    '17-05-2022',
+    1,
+    'ACTIVO',
+    '4567891323',
+    '1234567897'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    700.00,
+    '17-05-2022',
+    1,
+    'ACTIVO',
+    '456789123789',
+    '1234567898'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    500.00,
+    '14-05-2022',
+    1,
+    'ACTIVO',
+    '456789123789',
+    '1234567899'
+);
+
+INSERT INTO horizonte_gt.purchase(
+    "total",
+    "purchase_date",
+    "total_tickets",
+    "status",
+    "identification_number",
+    "card_number"
+) VALUES (
+    500.00,
+    '14-05-2022',
+    1,
+    'ACTIVO',
+    '65498731',
+    '1234567899'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR REDEEMED MILES 
+-- --------------------------------------------
+INSERT INTO horizonte_gt.redeemed_miles(
+    "old_total_miles",
+    "new_total_miles",
+    "redeemed_miles",
+    "user_username",
+    "id_purchase"
+) VALUES (
+    100,
+    50,
+    50,
+    'alejandroBR',
+    14
+);
+
+INSERT INTO horizonte_gt.redeemed_miles(
+    "old_total_miles",
+    "new_total_miles",
+    "redeemed_miles",
+    "user_username",
+    "id_purchase"
+) VALUES (
+    200,
+    150,
+    50,
+    'joseABR',
+    19
+);
+
+
+INSERT INTO horizonte_gt.redeemed_miles(
+    "old_total_miles",
+    "new_total_miles",
+    "redeemed_miles",
+    "user_username",
+    "id_purchase"
+) VALUES (
+    500,
+    350,
+    150,
+    'pabloBR',
+    20
+);
+
+INSERT INTO horizonte_gt.redeemed_miles(
+    "old_total_miles",
+    "new_total_miles",
+    "redeemed_miles",
+    "user_username",
+    "id_purchase"
+) VALUES (
+    500,
+    350,
+    150,
+    'sharonZG',
+    21
+);
+
+INSERT INTO horizonte_gt.redeemed_miles(
+    "old_total_miles",
+    "new_total_miles",
+    "redeemed_miles",
+    "user_username",
+    "id_purchase"
+) VALUES (
+    350,
+    200,
+    150,
+    'sharonZG',
+    22
+);
+
+INSERT INTO horizonte_gt.redeemed_miles(
+    "old_total_miles",
+    "new_total_miles",
+    "redeemed_miles",
+    "user_username",
+    "id_purchase"
+) VALUES (
+    400,
+    200,
+    200,
+    'kiddieGang',
+    23
+);
+
+-- --------------------------------------------
+-- INSERTS FOR ASSIGNMENT SEAT TICKET
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '1',
+    30,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '1',
+    25,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '2',
+    30,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '2',
+    25,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    3,
+    'A',
+    '1',
+    33,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    3,
+    'A',
+    '1',
+    26,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    3,
+    'A',
+    '2',
+    33,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    3,
+    'A',
+    '2',
+    26,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    5,
+    'A',
+    '1',
+    27,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    5,
+    'A',
+    '2',
+    27,
+    'ACTIVO'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR INSURANCE PERCENTAGE PRICE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.insurance_percentage_price(
+    "percentage_of_price"
+) VALUES (
+    50
+);
+
+-- --------------------------------------------
+-- INSERTS FOR DOUBLE TRIP DISCOUNT
+-- --------------------------------------------
+INSERT INTO horizonte_gt.double_trip_discount(
+    "discount",
+    "name_class"
+) VALUES (
+    5,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.double_trip_discount(
+    "discount",
+    "name_class"
+) VALUES (
+    3,
+    'CLASE BUSINESS'
+);
+
+INSERT INTO horizonte_gt.double_trip_discount(
+    "discount",
+    "name_class"
+) VALUES (
+    2.5,
+    'CLASE ECONOMY'
+);
+
+INSERT INTO horizonte_gt.double_trip_discount(
+    "discount",
+    "name_class"
+) VALUES (
+    2.5,
+    'CLASE ECONOMY BASICA'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR TICKET
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    700,
+    14,
+    '123456789',
+    1,
+    'A',
+    '1',
+    30,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    450,
+    15,
+    '1234567891',
+    1,
+    'A',
+    '1',
+    25,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    450,
+    15,
+    '1234567892',
+    1,
+    'A',
+    '2',
+    25,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    500,
+    16,
+    '1234567893',
+    1,
+    'A',
+    '2',
+    30,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    500,
+    16,
+    '1234567893',
+    3,
+    'A',
+    '1',
+    33,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    500,
+    17,
+    '1234567894',
+    3,
+    'A',
+    '1',
+    26,
+    null,
+    true,
+    1,
+    1,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    500,
+    17,
+    '1234567894',
+    3,
+    'A',
+    '2',
+    33,
+    7,
+    true,
+    1,
+    1,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    700,
+    18,
+    '1234567895',
+    3,
+    'A',
+    '2',
+    26,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    700,
+    20,
+    '1234567896',
+    5,
+    'A',
+    '1',
+    27,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.ticket(
+    "price",
+    "id_purchase",
+    "passenger_passport_number",
+    "id_airplane",
+    "seat_letter_row",
+    "seat_number_row",
+    "id_flight",
+    "id_return_ticket",
+    "has_insurance",
+    "id_insurance_percentage_price",
+    "id_double_trip_discount",
+    "status"
+) VALUES (
+    700,
+    21,
+    '1234567897',
+    5,
+    'A',
+    '2',
+    27,
+    null,
+    false,
+    null,
+    null,
+    'ACTIVO'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PASSENGER NATIONALITY
+-- --------------------------------------------
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Guatemalteco',
+    '123456789'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Salvadoreño',
+    '1234567891'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Mexicano',
+    '1234567892'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Español',
+    '1234567893'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Aleman',
+    '1234567894'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Frances',
+    '1234567895'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Belga',
+    '1234567896'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Argentino',
+    '1234567897'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Canadiense',
+    '1234567898'
+);
+
+INSERT INTO horizonte_gt.passenger_nationality (
+    "nationality_name",
+    "passenger_passport_number"
+) VALUES (
+    'Estadounidense',
+    '1234567899'
+);

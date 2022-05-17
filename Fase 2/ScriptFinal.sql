@@ -21,13 +21,15 @@ CREATE TABLE  "horizonte_gt"."account_type" (
   "required_miles" INT NOT NULL CHECK("required_miles">=0),
   "percentage_flight_cost" DECIMAL NOT NULL,
   "required_years_prev_acc" INT NULL CHECK("required_years_prev_acc">=0),
-  "prev_account_type_name" VARCHAR(50) NOT NULL,
+  "prev_account_type_name" VARCHAR(50) NULL,
   PRIMARY KEY ("account_type_name"),
   CONSTRAINT "fk_account_type_account_type1"
     FOREIGN KEY ("prev_account_type_name")
     REFERENCES "horizonte_gt"."account_type" ("account_type_name")
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION);
+    ON UPDATE NO ACTION
+);
+
 
 
 -- -----------------------------------------------------

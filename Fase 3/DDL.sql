@@ -3142,6 +3142,125 @@ INSERT INTO horizonte_gt.flight_status_logger(
     'FINALIZADO'
 );
 
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    30,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    31,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    25,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    26,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    27,
+    'RETRASADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    28,
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    29,
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    29,
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    30,
+    'CANCELADO'
+);
+
+INSERT INTO horizonte_gt.flight_status_logger(
+    "time",
+    "date",
+    "id_flight",
+    "name_flight_status"
+) VALUES (
+    '24:00',
+    '17-05-2022',
+    30,
+    'RETRASADO'
+);
 -- --------------------------------------------
 -- INSERTS FOR PURCHASE 
 -- --------------------------------------------
@@ -4396,6 +4515,419 @@ INSERT INTO horizonte_gt.pet_ticket (
 );
 
 -- --------------------------------------------
+-- INSERTS FOR BOARDING
+-- --------------------------------------------
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '19:30',
+    '20:00',
+    2
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '05:30',
+    '06:00',
+    3
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '05:30',
+    '06:00',
+    4
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '19:30',
+    '20:00',
+    5
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '14:30',
+    '15:00',
+    6
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '05:30',
+    '06:00',
+    7
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '14:30',
+    '15:00',
+    8
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '05:30',
+    '06:00',
+    9
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '15:30',
+    '16:00',
+    10
+);
+
+INSERT INTO horizonte_gt.boarding(
+    "boarding_time",
+    "departure_time",
+    "id_ticket"
+) VALUES (
+    '15:30',
+    '16:00',
+    11
+);
+
+-- --------------------------------------------
+-- INSERTS FOR LUGGAGE_TYPE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.luggage_type (
+    "max_value",
+    "assigned_zone",
+    "name_type_luggage"
+) VALUES (
+    50,
+    'ZONA DE CARGA',
+    'MALETA DOCUMENTADA'
+);
+
+INSERT INTO horizonte_gt.luggage_type (
+    "max_value",
+    "assigned_zone",
+    "name_type_luggage"
+) VALUES (
+    20,
+    'CABINA',
+    'MALETA DE MANO'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR LUGAGGE PRICE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.luggage_price(
+    "luggage_number",
+    "price",
+    "id_luggage_type"
+) VALUES (
+    1,
+    25,
+    2
+);
+
+INSERT INTO horizonte_gt.luggage_price(
+    "luggage_number",
+    "price",
+    "id_luggage_type"
+) VALUES (
+    2,
+    50,
+    2
+);
+
+INSERT INTO horizonte_gt.luggage_price(
+    "luggage_number",
+    "price",
+    "id_luggage_type"
+) VALUES (
+    3,
+    75,
+    2
+);
+
+INSERT INTO horizonte_gt.luggage_price(
+    "luggage_number",
+    "price",
+    "id_luggage_type"
+) VALUES (
+    1,
+    50,
+    1
+);
+
+INSERT INTO horizonte_gt.luggage_price(
+    "luggage_number",
+    "price",
+    "id_luggage_type"
+) VALUES (
+    2,
+    75,
+    1
+);
+
+INSERT INTO horizonte_gt.luggage_price(
+    "luggage_number",
+    "price",
+    "id_luggage_type"
+) VALUES (
+    3,
+    100,
+    1
+);
+
+-- --------------------------------------------
+-- INSERTS FOR LUGAGGE 
+-- --------------------------------------------
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    1,
+    1,
+    2,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    2,
+    1,
+    2,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    3,
+    1,
+    2,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    1,
+    2,
+    2,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    2,
+    2,
+    2,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    3,
+    2,
+    2,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    1,
+    1,
+    3,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    2,
+    1,
+    3,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    3,
+    1,
+    3,
+    'ABORDO',
+    false
+);
+
+INSERT INTO horizonte_gt.luggage(
+    "weight",
+    "height",
+    "width",
+    "volume",
+    "luggage_number",
+    "id_luggage_type",
+    "id_ticket",
+    "status",
+    "isDelivered"
+) VALUES (
+    10,
+    10,
+    10,
+    10,
+    1,
+    1,
+    4,
+    'ABORDO',
+    false
+);
+
+-- --------------------------------------------
 -- INSERTS FOR POSITION
 -- --------------------------------------------
 INSERT INTO horizonte_gt.position(
@@ -4557,6 +5089,151 @@ INSERT INTO horizonte_gt.employee(
     100
 );
 
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567894',
+    'Alejandro',
+    'Guzman',
+    'alejandro@gmail.com',
+    'COPILOTO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    2,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567896',
+    'Fernando',
+    'Rios',
+    'fernando@gmail.com',
+    'MECANICO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    5,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567897',
+    'Eduardo',
+    'Rios',
+    'eduardo@gmail.com',
+    'MECANICO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    5,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567898',
+    'Dora',
+    'Arriola',
+    'dora@gmail.com',
+    'AZAFATA',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    3,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567899',
+    'Edna',
+    'Rodas',
+    'edna@gmail.com',
+    'AZAFATA',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    3,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567895',
+    'Yolandi',
+    'Si',
+    'edna@gmail.com',
+    'AZAFATA',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    3,
+    100
+);
+
+
 -- --------------------------------------------
 -- INSERTS FOR POSITION ABOARD
 -- --------------------------------------------
@@ -4626,6 +5303,61 @@ INSERT INTO horizonte_gt.employee_pilot(
     '1234567893',
     '2017-01-01'
 );
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT ATTENDANCE
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('5:29', '23:00', '2021-10-07', 123456789);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('9:28', '23:18', '2021-08-21', 123456789);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('13:27', '23:37', '2021-09-07', 1234567891);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('18:56', '19:45', '2022-04-10', 1234567891);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('23:10', '8:29', '2021-05-18', 1234567892);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('2:31', '8:44', '2021-11-30', 1234567892);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('14:48', '8:12', '2022-02-20', 1234567893);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('1:12', '3:36', '2021-07-14', 1234567893);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('6:15', '18:24', '2022-03-06', 1234567894);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('20:20', '16:28', '2021-05-23', 1234567894);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('13:16', '19:57', '2021-08-07', 1234567896);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('1:13', '3:39', '2022-04-18', 1234567896);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('1:55', '1:47', '2021-06-02', 1234567897);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('16:03', '22:59', '2021-08-12', 1234567897);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('19:02', '7:49', '2021-12-05', 1234567898);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('1:13', '15:43', '2021-06-20', 1234567898);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('2:23', '19:46', '2021-11-11', 1234567899);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('16:31', '21:01', '2021-12-01', 1234567899);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('0:57', '16:39', '2021-09-26', 1234567895);
+INSERT INTO horizonte_gt.attendance ("arrival_time", "departure_time", "date", "id_employee") VALUES ('15:35', '10:10', '2022-01-24', 1234567895);
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT NON attendance
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2022-04-23', '2021-10-20', 'odio in hac habitasse', 'bibendum felis sed', 123456789	);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2021-12-15', '2021-08-01', 'eros suspendisse accumsan tortor quis', 'blandit ultrices enim lorem', 1234567891);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2021-07-22', '2021-12-28', 'tristique in tempus sit', 'morbi ut odio cras', 1234567892);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2022-01-08', '2021-11-16', 'ut massa volutpat convallis', 'quam fringilla rhoncus', 1234567893);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2021-06-29', '2021-11-30', 'orci luctus et ultrices posuere', 'vel pede morbi porttitor lorem', 1234567894);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2022-01-06', '2022-01-16', 'risus praesent lectus vestibulum quam', 'ac nibh fusce lacus', 1234567896);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2022-01-13', '2021-08-29', 'fermentum donec ut mauris eget', 'eros elementum pellentesque quisque porta', 1234567897);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2021-07-06', '2021-08-17', 'amet lobortis sapien', 'nulla suscipit ligula in lacus', 1234567898);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2022-04-07', '2021-11-26', 'tincidunt eu felis', 'volutpat sapien arcu sed augue', 1234567899);
+INSERT INTO horizonte_gt.non_attendance (start_date, end_date, reason, justification, id_employee) VALUES ('2021-07-17', '2021-11-04', 'accumsan tellus nisi', 'quisque ut erat', 1234567895);
+
+-- --------------------------------------------
+-- INSERTS FOR VACATION REQUEST
+-- --------------------------------------------
+
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-02-15', '2022-03-08', 'APROBADA', 123456789);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-03-21', '2021-07-19', 'DENEGADA', 1234567891);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-02-22', '2021-06-26', 'PENDIENTE', 1234567892);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-01-21', '2021-08-02', 'PENDIENTE', 1234567893);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2021-09-21', '2021-12-30', 'PENDIENTE', 1234567894);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-03-03', '2021-07-08', 'APROBADA', 1234567896);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2021-08-18', '2022-05-21', 'APROBADA', 1234567897);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-02-02', '2021-06-19', 'APROBADA', 1234567898);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2021-05-17', '2022-04-19', 'APROBADA', 1234567899);
+INSERT INTO horizonte_gt.vacation_request (start_date, end_date, status, id_employee) VALUES ('2022-04-06', '2021-11-02', 'APROBADA', 1234567895);
 
 -- --------------------------------------------
 -- INSERTS FOR FLIGHT EMPLOYEE
@@ -5578,5 +6310,190 @@ INSERT INTO horizonte_gt.movie_purchase (
     10,
     1,
     150
+);
+
+-- --------------------------------------------
+-- INSERTS FOR MOVIE PURCHASE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-01-01',
+    8,
+    '123456789',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-02-01',
+    8,
+    '123456789',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-02-01',
+    8,
+    '1234567891',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-02-15',
+    8,
+    '1234567891',
+    125,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-03-01',
+    8,
+    '1234567892',
+    78,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-03-10',
+    8,
+    '1234567892',
+    85,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-04-01',
+    8,
+    '1234567893',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-04-04',
+    8,
+    '1234567893',
+    85,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-01-04',
+    8,
+    '123456789',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-01-04',
+    8,
+    '1234567891',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-04-18',
+    8,
+    '1234567892',
+    200,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-12-01',
+    8,
+    '1234567893',
+    100,
+    true
+);
+
+INSERT INTO horizonte_gt.hours_worked (
+    "date",
+    "amount_hours",
+    "id_employee",
+    "amount_salary",
+    "is_paid"
+) VALUES (
+    '2022-10-01',
+    8,
+    '1234567893',
+    100,
+    true
 );
 

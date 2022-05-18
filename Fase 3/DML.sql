@@ -1126,7 +1126,7 @@ CREATE TABLE  "horizonte_gt"."movie_purchase" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."artist"
+-- Table "horizonte_gt"."artist"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."artist" CASCADE;
 
@@ -1139,7 +1139,7 @@ CREATE TABLE  "horizonte_gt"."artist" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."artist_movie"
+-- Table "horizonte_gt"."artist_movie"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."artist_movie" CASCADE;
 

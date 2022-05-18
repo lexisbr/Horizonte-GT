@@ -748,7 +748,7 @@ CREATE TABLE  "horizonte_gt"."vaccine_list" (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
----- STOP
+---- 29
 
 -- -----------------------------------------------------
 -- Table "horizonte_gt"."pet_flight_price"
@@ -791,7 +791,7 @@ CREATE TABLE  "horizonte_gt"."pet_ticket" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."boarding"
+-- Table "horizonte_gt"."boarding"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."boarding" CASCADE;
 
@@ -808,7 +808,7 @@ CREATE TABLE  "horizonte_gt"."boarding" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."luggage_type"
+-- Table "horizonte_gt"."luggage_type"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."luggage_type" CASCADE;
 
@@ -821,7 +821,7 @@ CREATE TABLE  "horizonte_gt"."luggage_type" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."luggage_price"
+-- Table "horizonte_gt"."luggage_price"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."luggage_price" CASCADE;
 
@@ -838,7 +838,7 @@ CREATE TABLE  "horizonte_gt"."luggage_price" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."luggage"
+-- Table "horizonte_gt"."luggage"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."luggage" CASCADE;
 
@@ -911,7 +911,7 @@ CREATE TABLE  "horizonte_gt"."airplane_menu_class" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."ingredients"
+-- Table "horizonte_gt"."ingredients"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."ingredients" CASCADE;
 
@@ -923,7 +923,7 @@ CREATE TABLE  "horizonte_gt"."ingredients" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."food_ingredients"
+-- Table "horizonte_gt"."food_ingredients"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."food_ingredients" CASCADE;
 
@@ -949,7 +949,28 @@ CREATE TABLE  "horizonte_gt"."food_ingredients" (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
--- STOP
+-- -----------------------------------------------------
+-- Table "horizonte_gt"."menu_purchase"
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS "horizonte_gt"."menu_purchase" CASCADE;
+
+CREATE TABLE  "horizonte_gt"."menu_purchase" (
+  "id_ticket" SERIAL ,
+  "id_airplane_menu_class" INTEGER NOT NULL,
+  "price" DECIMAL NOT NULL CHECK("price">=0),
+  PRIMARY KEY ("id_ticket","id_airplane_menu_class"),
+  CONSTRAINT "fk_menu_purchase1"
+    FOREIGN KEY ("id_airplane_menu_class")
+    REFERENCES "horizonte_gt"."airplane_menu_class" ("id_airplane_menu_class")
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT "fk_menu_purchase2"
+    FOREIGN KEY ("id_ticket")
+    REFERENCES "horizonte_gt"."ticket" ("id_ticket")
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
 -- -----------------------------------------------------
 -- Table "horizonte_gt"."wifi_price"
 -- -----------------------------------------------------
@@ -1033,7 +1054,7 @@ CREATE TABLE  "horizonte_gt"."employee" (
 
 
 -- -----------------------------------------------------
--- Table "horizonte_gt"."minor_passenger"
+-- Table "horizonte_gt"."minor_passenger"*
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS "horizonte_gt"."minor_passenger" CASCADE;
 
@@ -1072,7 +1093,7 @@ CREATE TABLE  "horizonte_gt"."minor_passenger" (
 DROP TABLE IF EXISTS "horizonte_gt"."movie" CASCADE;
 
 CREATE TABLE  "horizonte_gt"."movie" (
-  "id_movie" INT NOT NULL,
+  "id_movie" SERIAL NOT NULL,
   "cost" DECIMAL NOT NULL CHECK("cost">0),
   "description" VARCHAR(255) NOT NULL,
   "category" VARCHAR(45) NOT NULL,
@@ -1179,10 +1200,9 @@ CREATE TABLE  "horizonte_gt"."position_aboard" (
 DROP TABLE IF EXISTS "horizonte_gt"."employee_pilot" CASCADE;
 
 CREATE TABLE  "horizonte_gt"."employee_pilot" (
-  "id_employee_pilot" INT NOT NULL ,
-  "start_date" DATE NOT NULL,
   "employee_id_employee" INT NOT NULL,
-  PRIMARY KEY ("id_employee_pilot"),
+  "start_date" DATE NOT NULL,
+  PRIMARY KEY ("employee_id_employee"),
   CONSTRAINT "fk_employee_pilot_employee1"
     FOREIGN KEY ("employee_id_employee")
     REFERENCES "horizonte_gt"."employee" ("id_employee")

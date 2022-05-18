@@ -2496,6 +2496,78 @@ INSERT INTO horizonte_gt.seat (
     'PRIMERA CLASE'
 );
 
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '3',
+    'A',
+    5,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '4',
+    'A',
+    5,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '3',
+    'A',
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '4',
+    'A',
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '5',
+    'A',
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.seat (
+    "number_row",
+    "letter_row",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    '6',
+    'A',
+    1,
+    'PRIMERA CLASE'
+);
+
 -- --------------------------------------------
 -- INSERTS FOR DISTRIBUTION CLASS AIRPLANE
 -- --------------------------------------------
@@ -3466,6 +3538,119 @@ INSERT INTO horizonte_gt.assignment_seat_ticket(
     'ACTIVO'
 );
 
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    5,
+    'A',
+    '3',
+    27,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    5,
+    'A',
+    '4',
+    27,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '3',
+    25,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '4',
+    25,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '5',
+    25,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '3',
+    26,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '3',
+    33,
+    'ACTIVO'
+);
+
+INSERT INTO horizonte_gt.assignment_seat_ticket(
+    "id_airplane",
+    "letter_row",
+    "seat_number_row",
+    "id_flight",
+    "status"
+) VALUES (
+    1,
+    'A',
+    '4',
+    33,
+    'ACTIVO'
+);
+
+
 -- --------------------------------------------
 -- INSERTS FOR INSURANCE PERCENTAGE PRICE
 -- --------------------------------------------
@@ -3878,3 +4063,1520 @@ INSERT INTO horizonte_gt.passenger_nationality (
     'Estadounidense',
     '1234567899'
 );
+
+-- --------------------------------------------
+-- INSERTS FOR PET
+-- --------------------------------------------
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Perro',
+    'Lola',
+    '/path/doc',
+    35
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Perro',
+    'Firulais',
+    '/path/doc',
+    15
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Perro',
+    'Barry',
+    '/path/doc',
+    5
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Gato',
+    'Bigotes',
+    '/path/doc',
+    15
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Perro',
+    'Bruno',
+    '/path/doc',
+    10
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Perro',
+    'Lulu',
+    '/path/doc',
+    10
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Perro',
+    'Doggo',
+    '/path/doc',
+    35
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Gato',
+    'Coco',
+    '/path/doc',
+    25
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Gato',
+    'Martin',
+    '/path/doc',
+    15
+);
+
+INSERT INTO horizonte_gt.pet(
+    "specie",
+    "name",
+    "veterinary_certificate_path",
+    "weight"
+) VALUES (
+    'Gato',
+    'Gorda',
+    '/path/doc',
+    35
+);
+
+-- --------------------------------------------
+-- INSERTS FOR VACCINE LIST
+-- --------------------------------------------
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    1
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    2
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    3
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    4
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    5
+);
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    6
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    7
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    8
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    9
+);
+
+INSERT INTO horizonte_gt.vaccine_list(
+    "vaccine_name",
+    "id_pet"
+) VALUES (
+    'PARVOVIRUS',
+    10
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PET FLIGHT PRICE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.pet_flight_price(
+    "max_weight",
+    "airplane_zone",
+    "price"
+) VALUES (
+    '30',
+    'CABINA',
+    100
+);
+
+INSERT INTO horizonte_gt.pet_flight_price(
+    "max_weight",
+    "airplane_zone",
+    "price"
+) VALUES (
+    '200',
+    'ZONA DE CARGA',
+    200
+);
+
+-- --------------------------------------------
+-- INSERTS FOR PET TICKET
+-- --------------------------------------------
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    1,
+    1,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    2,
+    1,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    3,
+    2,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    4,
+    2,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    5,
+    3,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    6,
+    3,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    7,
+    4,
+    2
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    8,
+    5,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    9,
+    5,
+    1
+);
+
+INSERT INTO horizonte_gt.pet_ticket (
+    "id_pet",
+    "id_ticket",
+    "id_pet_flight_price"
+) VALUES (
+    10,
+    6,
+    2
+);
+
+-- --------------------------------------------
+-- INSERTS FOR POSITION
+-- --------------------------------------------
+INSERT INTO horizonte_gt.position(
+    "name",
+    "is_aboard",
+    "hourly_base_salary"
+) VALUES (
+    'PILOTO',
+    true,
+    100
+);
+
+INSERT INTO horizonte_gt.position(
+    "name",
+    "is_aboard",
+    "hourly_base_salary"
+) VALUES (
+    'COPILOTO',
+    true,
+    80
+);
+
+INSERT INTO horizonte_gt.position(
+    "name",
+    "is_aboard",
+    "hourly_base_salary"
+) VALUES (
+    'AZAFATA',
+    true,
+    50
+);
+
+INSERT INTO horizonte_gt.position(
+    "name",
+    "is_aboard",
+    "hourly_base_salary"
+) VALUES (
+    'SECRETARIA',
+    false,
+    30
+);
+
+INSERT INTO horizonte_gt.position(
+    "name",
+    "is_aboard",
+    "hourly_base_salary"
+) VALUES (
+    'MECANICO',
+    false,
+    100
+);
+
+INSERT INTO horizonte_gt.position(
+    "name",
+    "is_aboard",
+    "hourly_base_salary"
+) VALUES (
+    'Ingeniero de Vuelo',
+    true,
+    100
+);
+
+-- --------------------------------------------
+-- INSERTS FOR EMPLOYEE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '123456789',
+    'Zack',
+    'Efron',
+    'zack@gmail.com',
+    'PILOTO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    1,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567891',
+    'Van',
+    'Gogh',
+    'van@gmail.com',
+    'PILOTO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    1,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567892',
+    'Yes',
+    'Honey',
+    'yes@gmail.com',
+    'PILOTO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    1,
+    100
+);
+
+INSERT INTO horizonte_gt.employee(
+    "id_employee",
+    "firstname",
+    "lastname",
+    "email",
+    "employee_type",
+    "phone",
+    "birth_date",
+    "hiring_date",
+    "id_position",
+    "hour_base_salary"
+) VALUES (
+    '1234567893',
+    'Daddy',
+    'Yankee',
+    'daddy@gmail.com',
+    'PILOTO',
+    '12345678',
+    '2000-02-05',
+    '2022-02-05',
+    1,
+    100
+);
+
+-- --------------------------------------------
+-- INSERTS FOR POSITION ABOARD
+-- --------------------------------------------
+INSERT INTO horizonte_gt.position_aboard(
+    "extra_commissions",
+    "id_position"
+) VALUES (
+    100,
+    1
+);
+
+INSERT INTO horizonte_gt.position_aboard(
+    "extra_commissions",
+    "id_position"
+) VALUES (
+    90,
+    2
+);
+
+INSERT INTO horizonte_gt.position_aboard(
+    "extra_commissions",
+    "id_position"
+) VALUES (
+    50,
+    3
+);
+
+INSERT INTO horizonte_gt.position_aboard(
+    "extra_commissions",
+    "id_position"
+) VALUES (
+    100,
+    6
+);
+
+-- --------------------------------------------
+-- INSERTS FOR EMPLOYEE PILOT
+-- --------------------------------------------
+INSERT INTO horizonte_gt.employee_pilot(
+    "employee_id_employee",
+    "start_date"
+) VALUES (
+    '123456789',
+    '2020-01-01'
+);
+
+INSERT INTO horizonte_gt.employee_pilot(
+    "employee_id_employee",
+    "start_date"
+) VALUES (
+    '1234567891',
+    '2019-01-01'
+);
+
+INSERT INTO horizonte_gt.employee_pilot(
+    "employee_id_employee",
+    "start_date"
+) VALUES (
+    '1234567892',
+    '2018-01-01'
+);
+
+INSERT INTO horizonte_gt.employee_pilot(
+    "employee_id_employee",
+    "start_date"
+) VALUES (
+    '1234567893',
+    '2017-01-01'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR FLIGHT EMPLOYEE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '123456789',
+    25,
+    100
+);
+
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567891',
+    26,
+    100
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567892',
+    27,
+    10
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567893',
+    28,
+    10
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '123456789',
+    29,
+    50
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '123456789',
+    30,
+    40
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567891',
+    31,
+    75
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567892',
+    32,
+    75
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567893',
+    33,
+    150
+);
+
+INSERT INTO horizonte_gt.flight_employee(
+    "id_employee",
+    "id_flight",
+    "extra_comissions_amount"
+) VALUES (
+    '1234567893',
+    34,
+    150
+);
+
+-- --------------------------------------------
+-- INSERTS FOR FOOD
+-- --------------------------------------------
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'PEPIAN',
+    150.00,
+    'ALMUERZO',
+    30.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'QUICHON',
+    150.00,
+    'ALMUERZO',
+    30.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'KAKIK',
+    200.00,
+    'ALMUERZO',
+    50.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'PLATANOS EN MOLE',
+    80.00,
+    'ALMUERZO',
+    20.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'CEREAL',
+    30.00,
+    'DESAYUNO',
+    10.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'YOGURTH',
+    8.00,
+    'DESAYUNO',
+    5.50
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'HUEVOS',
+    30.00,
+    'DESAYUNO',
+    05.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'CALDO',
+    130.00,
+    'ALMUERZO',
+    95.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'ENSALADA',
+    80.00,
+    'ALMUERZO',
+    55.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'SOPA',
+    30.00,
+    'CENA',
+    15.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'CERVEZA',
+    30.00,
+    'BEBIDA',
+    15.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'GASEOSA',
+    30.00,
+    'BEBIDA',
+    15.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'JUGO',
+    15.00,
+    'BEBIDA',
+    10.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'AGUA',
+    10.00,
+    'BEBIDA',
+    5.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'JUGO',
+    30.00,
+    'BEBIDA',
+    15.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'PASTELILLOS',
+    40.00,
+    'POSTRE',
+    25.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'GALLETAS',
+    30.00,
+    'POSTRE',
+    15.00
+);
+
+INSERT INTO horizonte_gt.food(
+    "name_food",
+    "price",
+    "type",
+    "cost"
+) VALUES (
+    'PALOMITAS',
+    30.00,
+    'FRITURA',
+    15.00
+);
+
+
+
+-- --------------------------------------------
+-- INSERTS FOR AIRPLANE MENU CLASS 
+-- --------------------------------------------
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    11,
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    12,
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    13,
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    14,
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    16,
+    2,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    17,
+    2,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    45,
+    true,
+    18,
+    2,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    30,
+    false,
+    1,
+    1,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    30,
+    false,
+    2,
+    3,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    30,
+    false,
+    3,
+    4,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    30,
+    false,
+    4,
+    4,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    30,
+    false,
+    5,
+    5,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.airplane_menu_class(
+    "existing_amount",
+    "is_free",
+    "id_food",
+    "id_airplane",
+    "name_class"
+) VALUES (
+    30,
+    false,
+    6,
+    6,
+    'PRIMERA CLASE'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR MENU PURCHASE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    2,
+    8,
+    150
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    2,
+    9,
+    150
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    3,
+    10,
+    200
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    3,
+    11,
+    80
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    4,
+    12,
+    30
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    5,
+    12,
+    30
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    6,
+    1,
+    0
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    6,
+    2,
+    0
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    7,
+    7,
+    0
+);
+
+INSERT INTO horizonte_gt.menu_purchase(
+    "id_ticket",
+    "id_airplane_menu_class",
+    "price"
+) VALUES (
+    6,
+    3,
+    0
+);
+
+-- --------------------------------------------
+-- INSERTS FOR WIFI PRICE  
+-- --------------------------------------------
+INSERT INTO horizonte_gt.wifi_price(
+    "price",
+    "class_name_class"
+) VALUES (
+    100,
+    'PRIMERA CLASE'
+);
+
+INSERT INTO horizonte_gt.wifi_price(
+    "price",
+    "class_name_class"
+) VALUES (
+    100,
+    'CLASE BUSINESS'
+);
+
+INSERT INTO horizonte_gt.wifi_price(
+    "price",
+    "class_name_class"
+) VALUES (
+    100,
+    'CLASE ECONOMY'
+);
+
+INSERT INTO horizonte_gt.wifi_price(
+    "price",
+    "class_name_class"
+) VALUES (
+    100,
+    'CLASE ECONOMY BASICA'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR WIFI PURCHASE  
+-- --------------------------------------------
+INSERT INTO horizonte_gt.wifi_purchase(
+    "user_username",
+    "id_ticket",
+    "price",
+    "id_wifi_price"
+) VALUES (
+    'alejandroBR',
+    2,
+    100,
+    1
+);
+
+INSERT INTO horizonte_gt.wifi_purchase(
+    "user_username",
+    "id_ticket",
+    "price",
+    "id_wifi_price"
+) VALUES (
+    'pabloBR',
+    10,
+    100,
+    1
+);
+
+INSERT INTO horizonte_gt.wifi_purchase(
+    "user_username",
+    "id_ticket",
+    "price",
+    "id_wifi_price"
+) VALUES (
+    'sharonZG',
+    11,
+    100,
+    1
+);
+
+-- --------------------------------------------
+-- INSERTS FOR MOVIE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    100,
+    'STAR WARS 1',
+    'CIENCIA FICCION',
+    'B',
+    150,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    100,
+    'STAR WARS 2',
+    'CIENCIA FICCION',
+    'B',
+    200,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    100,
+    'STAR WARS 3',
+    'CIENCIA FICCION',
+    'B',
+    300,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    100,
+    'STAR WARS 4',
+    'CIENCIA FICCION',
+    'B',
+    350,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    300,
+    'STAR WARS 5',
+    'CIENCIA FICCION',
+    'B',
+    400,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    300,
+    'STAR WARS 6',
+    'CIENCIA FICCION',
+    'B',
+    400,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    300,
+    'STAR WARS 7',
+    'CIENCIA FICCION',
+    'B',
+    400,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    300,
+    'STAR WARS 8',
+    'CIENCIA FICCION',
+    'B',
+    450,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    400,
+    'STAR WARS 9',
+    'CIENCIA FICCION',
+    'B',
+    500,
+    '1:45'
+);
+
+INSERT INTO horizonte_gt.movie(
+    "cost",
+    "description",
+    "category",
+    "classification",
+    "price",
+    "duration"
+) VALUES (
+    500,
+    'STAR WARS 10',
+    'CIENCIA FICCION',
+    'B',
+    600,
+    '1:45'
+);
+
+-- --------------------------------------------
+-- INSERTS FOR MOVIE PURCHASE
+-- --------------------------------------------
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    2,
+    1,
+    150
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    2,
+    2,
+    200
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    3,
+    1,
+    150
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    3,
+    3,
+    350
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    4,
+    4,
+    350
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    5,
+    6,
+    400
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    5,
+    7,
+    400
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    7,
+    8,
+    450
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    7,
+    10,
+    450
+);
+
+INSERT INTO horizonte_gt.movie_purchase (
+    "id_ticket",
+    "id_movie",
+    "price"
+) VALUES (
+    10,
+    1,
+    150
+);
+
